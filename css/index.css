@@ -1,7 +1,8 @@
 body{
     background-color: #232323;
     margin: 0;
-	font-family: "Montserrat", "Avenir";
+    font-family: "Montserrat", "Avenir";
+    overflow: hidden;
 }
 .square{
     float: left;
@@ -27,20 +28,24 @@ h1{
     text-transform: uppercase;
     line-height:1.41 ;
     padding: 20px 0;
-    font-size: 60px;
+    font-size: 55px;
 }
 #reset{
     margin-right:20px ;
+    text-align: center;
+    padding-left: 0;
+    margin-left: 0;
 }
 #easyBtn{
     margin-left: 10px;
 }
 
+
 #stripe{
     background-color: white;
     color: black;
     text-align: center;
-    height: 40px;
+    height: 35px;
 }
 button{
     background-color: white;
@@ -66,7 +71,8 @@ button:focus{
 }
 #displayMessage{
     display: inline-block;  
-    width:30% ;
+    max-width: 600px; 
+    width: 30%;
     font-size: medium;
     color: black;
     background-color: white;
@@ -79,13 +85,16 @@ button:hover{
 }
 #red{
     color: red;
+    font-size: 45px;
 }
 #green{
     color: green;
+    font-size: 45px;
 
 }
 #blue{
     color: blue;
+    font-size: 45px;
 }
 #runaway{
     font-weight: 800;
@@ -125,36 +134,40 @@ div{
 }
 #inst{
     margin: 20px 30%;
-    background-color: #232323;
-    border: 2px solid white;
+    background-color: black;
+    border: 3px solid greenyellow;
     color: white;
     width: 35%;
+    height: 4rem;
     padding-left: 0px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 0px;
     border-radius: 200px;
     display: inline-block;
-    letter-spacing: -2px;
-    transition: color 0.5s,border 0.5s;
+    letter-spacing: -1px;
+    transition: color 0.3s,border 0.3s;
+    font-size: small;
 }
+
 #inst:hover{
     color: steelblue;
-    border:3px steelblue;
+    border:3px greenyellow;
     border-style: dashed;
 }
 #inst:hover span{
     color: white;
 
 }
-.last{
-    margin-bottom: 30px;
-}
+
+
 .mark{
     color: steelblue;
     padding-right: 5px;
+    font-size: large;
 }
 hr{
-    max-width:300px;
-    padding-top: 4px;
+    max-width:600px;
+    padding-top: 2px;
+    background-color: greenyellow;
 }

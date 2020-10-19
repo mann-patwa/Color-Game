@@ -24,7 +24,6 @@ easyBtn.addEventListener('click',function(){
     hardBtn.classList.remove('selected');
     colors = colorPicker(noColors);
     pickedColor = pickColor();
-    console.log(pickedColor)
     var differen = (pickedColor.slice(4,pickedColor.length-1)).split(',');
     red.textContent = String(differen[0] + ',');
     green.textContent = String(differen[1] + ',');
@@ -37,6 +36,7 @@ easyBtn.addEventListener('click',function(){
             squares[i].style.display = 'none'
         }
     }
+    squares[2].style.marginBottom = '20px'
 
 });
 hardBtn.addEventListener('click',function(){
@@ -55,9 +55,21 @@ hardBtn.addEventListener('click',function(){
         squares[i].style.backgroundColor = colors[i];
         squares[i].style.display = 'block';
     };
+    squares[5].style.marginBottom = '20px'
+});
+
+resetButton.addEventListener('mouseover',function(){
+    resetButton.style.backgroundColor = 'steelblue'
+    resetButton.style.color = 'white'
+
+})
+resetButton.addEventListener('mouseout',function(){
+    
 });
 resetButton.addEventListener('click',function(){
     colors = colorPicker(noColors);
+    // resetButton.style.backgroundColor = 'white'
+    phoneClick();
     resetButton.textContent = 'New Colors'
     pickedColor = pickColor();
     var differen = (pickedColor.slice(4,pickedColor.length-1)).split(',');
@@ -71,7 +83,6 @@ resetButton.addEventListener('click',function(){
 
     answerCorectness.textContent = '';
 });
-
 function generateColors(){
     var r = Math.floor(Math.random()*256);
     var g = Math.floor(Math.random()*256);
@@ -118,4 +129,10 @@ function changeColors(color){
 function pickColor(){
     random = Math.floor(Math.random()*noColors)
     return colors[random]
+};
+function phoneClick(){
+    setTimeout(function(){
+        resetButton.style.backgroundColor = 'white'
+        resetButton.style.color = 'steelblue'
+    },200)
 };
