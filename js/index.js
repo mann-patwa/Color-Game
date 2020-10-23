@@ -55,22 +55,14 @@ hardBtn.addEventListener('click',function(){
         squares[i].style.backgroundColor = colors[i];
         squares[i].style.display = 'block';
     };
-    squares[5].style.marginBottom = '20px'
+    squares[4].style.marginBottom = '20px'
 });
 
-resetButton.addEventListener('mouseover',function(){
-    resetButton.style.backgroundColor = 'steelblue'
-    resetButton.style.color = 'white'
 
-})
-resetButton.addEventListener('mouseout',function(){
-    
-});
 resetButton.addEventListener('click',function(){
     colors = colorPicker(noColors);
-    // resetButton.style.backgroundColor = 'white'
     phoneClick();
-    resetButton.textContent = 'New Colors'
+    resetButton.textContent = 'New Colors';
     pickedColor = pickColor();
     var differen = (pickedColor.slice(4,pickedColor.length-1)).split(',');
     red.textContent = String(differen[0] + ',');
@@ -83,6 +75,10 @@ resetButton.addEventListener('click',function(){
 
     answerCorectness.textContent = '';
 });
+
+
+
+
 function generateColors(){
     var r = Math.floor(Math.random()*256);
     var g = Math.floor(Math.random()*256);
@@ -95,7 +91,6 @@ function generateColors(){
         ans
     };
 };
-// console.log(r)
 function colorPicker(noOfColors){
     var arr = []
     for(i = 0; i < noOfColors;i++){
@@ -132,7 +127,41 @@ function pickColor(){
 };
 function phoneClick(){
     setTimeout(function(){
+        setTimeout(function(){
         resetButton.style.backgroundColor = 'white'
         resetButton.style.color = 'steelblue'
-    },200)
+        },200);
+        resetButton.style.backgroundColor = 'steelblue'
+        resetButton.style.color = 'white'
+    },10)
 };
+function CustomAlert(){
+    this.render = function(dialog){
+        var winW = window.innerWidth;
+        var winH = window.innerHeight;
+        var dialogoverlay = document.getElementById('dialogoverlay');
+        var dialogbox = document.getElementById('dialogbox');
+        dialogoverlay.style.display = "block";  
+        dialogoverlay.style.height = winH+"px";
+        dialogbox.style.display = "block";
+        var instWidth = document.querySelector('#dialogbox').offsetWidth  
+        var instHeight = document.querySelector('#dialogbox').offsetHeight
+        wide = Number(instWidth)
+        height = Number(instHeight)
+        dialogbox.style.left = (winW/2) - (wide/2)+ "px";
+        dialogbox.style.top = (winH/2) - (height/2) + "px";
+        document.getElementById('dialogboxhead').innerHTML = "Instructions";
+        document.getElementById('dialogboxhead').style.textAlign = 'center';
+        document.getElementById('dialogboxbody').innerHTML = dialog;
+        document.getElementById('dialogboxfoot').innerHTML = '<button onclick="Alert.ok()">OK!</button>';
+    }
+	this.ok = function(){
+		document.getElementById('dialogbox').style.display = "none";
+		document.getElementById('dialogoverlay').style.display = "none";
+	}
+}
+var Alert = new CustomAlert();
+var inside_inst = document.querySelector('#inside_inst')
+inst_button.addEventListener('click',function(){
+    Alert.render(inside_inst.innerHTML)
+});

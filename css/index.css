@@ -2,7 +2,7 @@ body{
     background-color: #232323;
     margin: 0;
     font-family: "Montserrat", "Avenir";
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .square{
     float: left;
@@ -35,6 +35,10 @@ h1{
     text-align: center;
     padding-left: 0;
     margin-left: 0;
+}
+#reset:hover{
+    background-color: none;
+    color: none;
 }
 #easyBtn{
     margin-left: 10px;
@@ -170,4 +174,64 @@ hr{
     max-width:600px;
     padding-top: 2px;
     background-color: greenyellow;
+    margin-top: 20px;
 }
+.phoneClick{
+    color: white;
+    background-color: steelblue;
+}
+
+/* tehj diaalof overlay 
+/* =====================> 
+/* =====================> 
+/* =====================> 
+/* =====================> /*
+/* ====> */
+#dialogoverlay{
+	display: none;
+	opacity: .8;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background: #FFF;
+	width: 100%;
+	z-index: 10;
+}
+#dialogbox{
+	display: none;
+	position: fixed;
+	background-color: greenyellow;
+	border-radius:7px; 
+    width:600px;
+    height: 300px;
+	z-index: 10;
+}
+#dialogbox > div{ background:#FFF; margin:6px; }
+#dialogbox > div > #dialogboxhead{ 
+    background: #666; 
+    font-size:19px;
+    padding:5px;
+    color:#CCC;
+ }
+#dialogbox > div > #dialogboxbody{ background:#333; padding:10px; color:#FFF; }
+#dialogbox > div > #dialogboxfoot{ background: #666; padding:2px; text-align:right; }
+#inside_inst{
+    display: none;
+}
+#main_example{
+    text-align: center;
+}
+#dialogbox{
+    overflow: auto;
+}
+::-webkit-scrollbar{
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+@media (max-width : 580px){
+    #dialogbox{
+        width:300px;
+        height: 300px;
+    }
+}
+
