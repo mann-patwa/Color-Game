@@ -170,11 +170,12 @@ div{
     padding-right: 5px;
     font-size: large;
 }
-hr{
-    max-width:600px;
-    padding-top: 2px;
+hr#topp{
+    max-width:300px;
+    padding-top: 1px;
     background-color: greenyellow;
-    margin-top: 20px;
+    margin-top: 20%;
+    border-radius: 50%;
 }
 .phoneClick{
     color: white;
@@ -234,10 +235,10 @@ hr{
         height: 300px;
     }
 }
-#tcent{
+/* #tcent{
     font-size: xx-large;
-}
-#mixred{
+} */
+/* #mixred{
     background-color: red;
     height: 5px;
     width: 5px;
@@ -251,7 +252,7 @@ hr{
     background-color: yellow;
     color: black;
     height: 5px;
-}
+} */
 /* #img{
     display: inline-block;
 } */

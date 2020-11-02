@@ -3,6 +3,7 @@ var h1 = document.querySelector('h1')
 var squares = document.querySelectorAll('.square')
 var colors = colorPicker(noColors);
 var pickedColor = pickColor()
+var dialogOverlay = document.querySelector('#dialogoverlay')
 // var answer = document.querySelector('#ans')
 var answerCorectness = document.querySelector('#displayMessage')
 var resetButton = document.querySelector('#reset')
@@ -55,7 +56,6 @@ hardBtn.addEventListener('click',function(){
         squares[i].style.backgroundColor = colors[i];
         squares[i].style.display = 'block';
     };
-    squares[4].style.marginBottom = '20px'
 });
 
 
@@ -165,3 +165,9 @@ var inside_inst = document.querySelector('#inside_inst')
 inst_button.addEventListener('click',function(){
     Alert.render(inside_inst.innerHTML)
 });
+   
+dialogOverlay.addEventListener('click',() =>{
+    document.getElementById('dialogbox').style.display = "none";
+	document.getElementById('dialogoverlay').style.display = "none";
+} );
+
