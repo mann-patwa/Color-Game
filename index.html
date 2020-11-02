@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color Game</title>
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
-
 <body>
 <div id="dialogoverlay"></div>
 <div id="dialogbox">
@@ -16,7 +16,7 @@
     </div>
 </div>
 <div id='runaway'>
-    <h1 id=''>RGB <br>(<span id='red'>,</span><span id='green'>,</span><span id='blue'></span>)</h1>
+    <h1>RGB <br>(<span id='red'>,</span><span id='green'>,</span><span id='blue'></span>)</h1>
     <!-- <img src="./pictures/RGB.png" id = 'img_sample' alt=""> -->
 </div>
 <div id='stripe'>
@@ -41,10 +41,14 @@
 </div>
 <div id="inside_inst">
     <!-- to be rendereed goes below this 'inside_inst' id  -->
+        <!-- <li>132,9,88 are the red,green and blue components respectively.Each of them are out of 255.</li> -->
+        <!-- <li><span id = 'mixred'>255</span> + <span id = 'mixgreen'>255</span> = <span id="mixyellow">yellow</span></li> -->
+    <img src="./img/rgb-mixer-200.png" alt=""><br><br>
+    <h2>The above example shows the mixing of the colors with various proportions, the max value of a color being 255 and the lowest being 0</h2>
+
 </div>
 <script type="text/javascript" src="./js/index.js"></script>
 </body>
-
 </html>
 
 
