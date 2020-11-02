@@ -31,7 +31,7 @@ h1{
     font-size: 55px;
 }
 #reset{
-    margin-right:20px ;
+    /*margin-right:20px  ;*/
     text-align: center;
     padding-left: 0;
     margin-left: 0;
@@ -56,7 +56,7 @@ button{
     border: none;
     text-transform: uppercase;
     height: 100%;
-    color: steelblue;
+    color: #e3b0a3;
     letter-spacing: -1px;
     transition: all 0.8s;
     outline: none;
@@ -67,7 +67,7 @@ button:focus{
     outline: none;
 }
 .selected{
-    background-color: steelblue;
+    background-color: #e3b0a3;
     color: white;
 }
 #ans{
@@ -83,9 +83,9 @@ button:focus{
 
 }
 button:hover{
-    background-color: steelblue;
+    background-color: #e3b0a3;
     color: white;
-    outline: steelblue;
+    outline: #e3b0a3;
 }
 #red{
     color: red;
@@ -102,7 +102,7 @@ button:hover{
 }
 #runaway{
     font-weight: 800;
-    background-color: steelblue;
+    background-color: #e3b0a3;
     font-size: 70px;
     display: flex;
     justify-content: center;
@@ -124,7 +124,7 @@ div{
 .top{
     display: flex;
     justify-content: space-between;
-    background-color: steelblue;
+    background-color: #e3b0a3;
     height: 200px;
 }
 /* #instructions{
@@ -155,7 +155,7 @@ div{
 }
 
 #inst:hover{
-    color: steelblue;
+    color: #e3b0a3;
     border:3px greenyellow;
     border-style: dashed;
 }
@@ -166,7 +166,7 @@ div{
 
 
 .mark{
-    color: steelblue;
+    color: #e3b0a3;
     padding-right: 5px;
     font-size: large;
 }
@@ -178,7 +178,7 @@ hr{
 }
 .phoneClick{
     color: white;
-    background-color: steelblue;
+    background-color: #e3b0a3;
 }
 
 /* tehj diaalof overlay 

@@ -28,7 +28,7 @@ easyBtn.addEventListener('click',function(){
     red.textContent = String(differen[0] + ',');
     green.textContent = String(differen[1] + ',');
     blue.textContent = String(differen[2] ) ;
-    runaway.style.backgroundColor = 'steelblue'
+    runaway.style.backgroundColor = '#e3b0a3'
     for(var i =0;i<squares.length;i++){
         if(colors[i]){
             squares[i].style.backgroundColor = colors[i];
@@ -42,7 +42,7 @@ easyBtn.addEventListener('click',function(){
 hardBtn.addEventListener('click',function(){
     resetButton.textContent = 'New Colors'
     noColors = 6;
-    runaway.style.backgroundColor = 'steelblue'
+    runaway.style.backgroundColor = '#e3b0a3'
     easyBtn.classList.remove('selected');
     hardBtn.classList.add('selected');
     colors = colorPicker(noColors);
@@ -71,7 +71,7 @@ resetButton.addEventListener('click',function(){
     for(var i = 0 ; i<squares.length ; i++){
         squares[i].style.backgroundColor = colors[i]
     }
-    runaway.style.backgroundColor = 'steelblue'
+    runaway.style.backgroundColor = '#e3b0a3'
 
     answerCorectness.textContent = '';
 });
@@ -129,9 +129,9 @@ function phoneClick(){
     setTimeout(function(){
         setTimeout(function(){
         resetButton.style.backgroundColor = 'white'
-        resetButton.style.color = 'steelblue'
+        resetButton.style.color = '#e3b0a3'
         },200);
-        resetButton.style.backgroundColor = 'steelblue'
+        resetButton.style.backgroundColor = '#e3b0a3'
         resetButton.style.color = 'white'
     },10)
 };
