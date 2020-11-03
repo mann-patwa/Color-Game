@@ -153,7 +153,7 @@ function CustomAlert(){
         document.getElementById('dialogboxhead').innerHTML = "Instructions";
         document.getElementById('dialogboxhead').style.textAlign = 'center';
         document.getElementById('dialogboxbody').innerHTML = dialog;
-        document.getElementById('dialogboxfoot').innerHTML = '<button onclick="Alert.ok()">OK!</button>';
+        // document.getElementById('dialogboxfoot').innerHTML = 
     }
 	this.ok = function(){
 		document.getElementById('dialogbox').style.display = "none";

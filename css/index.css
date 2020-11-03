@@ -215,7 +215,7 @@ hr#topp{
     color:#CCC;
  }
 #dialogbox > div > #dialogboxbody{ background:#333; padding:10px; color:#FFF;text-align: center; }
-#dialogbox > div > #dialogboxfoot{ background: #666; padding:2px; text-align:right; }
+#dialogbox > div > #dialogboxfoot{ background: #666; text-align:center; }
 #inside_inst{
     display: none;
 }
@@ -224,6 +224,9 @@ hr#topp{
 }
 #dialogbox{
     overflow: auto;
+}
+#okButton{
+    width: 100%;
 }
 ::-webkit-scrollbar{
     width: 0px;
