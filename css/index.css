@@ -56,7 +56,7 @@ button{
     border: none;
     text-transform: uppercase;
     height: 100%;
-    color: #e3b0a3;
+    color: steelblue;
     letter-spacing: -1px;
     transition: all 0.8s;
     outline: none;
@@ -67,7 +67,7 @@ button:focus{
     outline: none;
 }
 .selected{
-    background-color: #e3b0a3;
+    background-color: steelblue;
     color: white;
 }
 #ans{
@@ -83,9 +83,9 @@ button:focus{
 
 }
 button:hover{
-    background-color: #e3b0a3;
+    background-color: steelblue;
     color: white;
-    outline: #e3b0a3;
+    outline: steelblue;
 }
 #red{
     color: red;
@@ -102,7 +102,7 @@ button:hover{
 }
 #runaway{
     font-weight: 800;
-    background-color: #e3b0a3;
+    background-color: steelblue;
     font-size: 70px;
     display: flex;
     justify-content: center;
@@ -124,7 +124,7 @@ div{
 .top{
     display: flex;
     justify-content: space-between;
-    background-color: #e3b0a3;
+    background-color:steelblue;
     height: 200px;
 }
 /* #instructions{
@@ -155,7 +155,7 @@ div{
 }
 
 #inst:hover{
-    color: #e3b0a3;
+    color: steelblue;
     border:3px greenyellow;
     border-style: dashed;
 }
@@ -166,7 +166,7 @@ div{
 
 
 .mark{
-    color: #e3b0a3;
+    color: steelblue;
     padding-right: 5px;
     font-size: large;
 }
@@ -179,7 +179,7 @@ hr#topp{
 }
 .phoneClick{
     color: white;
-    background-color: #e3b0a3;
+    background-color: steelblue;
 }
 
 /* tehj diaalof overlay 
