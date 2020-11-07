@@ -19,6 +19,7 @@ body{
     max-width: 600px;
     margin: 20px auto ;
     /* display: flex; */
+    text-align: center;
 }
 
 h1{
@@ -174,8 +175,11 @@ hr#topp{
     max-width:300px;
     padding-top: 1px;
     background-color: greenyellow;
-    margin-top: 20%;
+    margin-top: 400px;
     border-radius: 50%;
+    display: inline-block;
+    margin-top: 50px;
+    width: 3000px;
 }
 .phoneClick{
     color: white;
