@@ -178,7 +178,7 @@ hr#topp{
     margin-top: 400px;
     border-radius: 50%;
     display: inline-block;
-    margin-top: 50px;
+    margin-top: 45px;
     width: 3000px;
 }
 .phoneClick{
@@ -242,7 +242,7 @@ hr#topp{
         width:300px;
         height: 300px;
     }
-}
+}   
 /* #tcent{
     font-size: xx-large;
 } */
