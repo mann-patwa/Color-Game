@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,47 +8,51 @@
     <link rel="icon" href="./img/logo-web.jpg" type="image/icon type">
     <link rel="stylesheet" href="./css/index.css">
 </head>
-<body>
-<div id="dialogoverlay"></div>
-<div id="dialogbox">
-    <div>
-        <div id="dialogboxhead"></div>
-        <div id="dialogboxbody"></div>
-        <div id="dialogboxfoot"><button id ='okButton' onclick="Alert.ok()">OK!</button></div>
-    </div>
-</div>
-<div id='runaway'>
-    <h1>RGB <br>(<span id='red'>,</span><span id='green'>,</span><span id='blue'></span>)</h1>
-    <!-- <img src="./pictures/RGB.png" id = 'img_sample' alt=""> -->
-</div>
-<div id='stripe'>
-    <!-- <button id = 'instructions'>how to play</button> -->
-    <button id='reset'>Play Again?</button>
-    <span id='displayMessage'></span>
-    <button id='easyBtn'>Easy</button>
-    <button id='hardBtn'>Hard</button>
-</div>
 
-<div id="container">
-    <div class="square"></div>
-    <div class="square"></div>
-    <div class="square"></div>
-    <div class="square"></div>
-    <div class="square"></div>
-    <div class="square last"></div>
-    <hr id="topp">
-    <button id='inst'><span class="mark">&quest;</span>INSTRUCTIONS</button>
-</div>
-<div id="inside_inst">
-    <!-- to be rendereed goes below this 'inside_inst' id  -->
+<body>
+    <div id="dialogoverlay"></div>
+    <div id="dialogbox">
+        <div>
+            <div id="dialogboxhead"></div>
+            <div id="dialogboxbody"></div>
+            <div id="dialogboxfoot"><button id='okButton' onclick="Alert.ok()">OK!</button></div>
+        </div>
+    </div>
+    <div id='runaway'>
+        <h1>RGB <br>(<span id='red'>,</span><span id='green'>,</span><span id='blue'></span>)</h1>
+        <!-- <img src="./pictures/RGB.png" id = 'img_sample' alt=""> -->
+    </div>
+    <div id='stripe'>
+        <!-- <button id = 'instructions'>how to play</button> -->
+        <button id='reset'>Play Again?</button>
+        <span id='displayMessage'></span>
+        <button id='easyBtn'>Easy</button>
+        <button id='hardBtn'>Hard</button>
+    </div>
+
+    <div id="container">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square last"></div>
+        <hr id="topp">
+        <button id='inst'><span class="mark">&quest;</span>INSTRUCTIONS</button>
+    </div>
+    <div id="inside_inst">
+        <!-- to be rendereed goes below this 'inside_inst' id  -->
         <!-- <li>132,9,88 are the red,green and blue components respectively.Each of them are out of 255.</li> -->
         <!-- <li><span id = 'mixred'>255</span> + <span id = 'mixgreen'>255</span> = <span id="mixyellow">yellow</span></li> -->
-    <img src="./img/rgb-mixer-200.png" alt=""><br><br>
-    <h2>The above example shows the mixing of the colors with various proportions, the max value of a color being 255 and the lowest being 0, you have to estimate the color which will be formed on mixing all these and select from one of the below</h2>
+        <img src="./img/rgb-mixer-200.png" alt=""><br><br>
+        <h2>The above example shows the mixing of the colors with various proportions, the max value of a color being
+            255 and the lowest being 0, you have to estimate the color which will be formed on mixing all these and
+            select from one of the below</h2>
 
-</div>
-<script type="text/javascript" src="./js/index.js"></script>
+    </div>
+    <script type="text/javascript" src="./js/index.js"></script>
 </body>
+
 </html>
 
 
