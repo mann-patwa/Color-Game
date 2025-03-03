@@ -207,7 +207,7 @@ hr#topp{
 	position: fixed;
 	background-color: greenyellow;
 	border-radius:7px; 
-    width:600px;
+    width:650px;
     height: 300px;
 	z-index: 10;
 }
