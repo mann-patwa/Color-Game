@@ -207,8 +207,8 @@ hr#topp{
 	position: fixed;
 	background-color: greenyellow;
 	border-radius:7px; 
-    width:650px;
-    height: 300px;
+    width:600px;
+    height: 550px;
 	z-index: 10;
 }
 #dialogbox > div{ background:#FFF; margin:6px; }
